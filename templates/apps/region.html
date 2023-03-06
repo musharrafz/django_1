@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tumanlar</title>
+</head>
+<p>
+{% for district in districts%}
+    <p>{{ district.name }}</p>
+{% endfor %}
+
+<br>
+<a href="{% url 'main_page' %}">Orqaga qaytish</a>
+</body>
+</html>
